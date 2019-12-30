@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery.1.11.1.min.js"></script>
+    <script>
+        window.onload = function () {
+            var btn = document.getElementsByTagName("button")[0]
+            btn.onclick = function () {
+                var hs = $("[name='hobby']:checked")
+                if (hs.length === $("[name='hobby']").length){
+                    console.log("全选了")
+                } else{
+                    console.log("没有全选")
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    性别：<input type="radio" name="sex" value="1">男
+    <input type="radio" name="sex" value="0">女
+    <br>
+    爱好：<input type="checkbox" name="hobby" value="football"> 足球
+    <input type="checkbox" name="hobby" value="basketball"> 篮球
+    <input type="checkbox" name="hobby" value="volleyball"> 排球
+    <br>
+    <button>点击</button>
+</body>
+</html>

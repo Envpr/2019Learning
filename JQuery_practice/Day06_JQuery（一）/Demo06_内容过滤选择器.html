@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery.1.11.1.min.js"></script>
+    <script>
+        window.onload = function () {
+            // 内容中包含2的div
+            // console.log($("div:contains('2')"))
+
+            // 没有内容的 空的div
+            // console.log($("div:empty"))
+
+            // 有内容的
+            //console.log($("div:parent"))
+
+            //
+            console.log($("div:has('#p1')"))
+        }
+    </script>
+</head>
+<body>
+    <div id="d1">
+        <p id="p1">abc</p>
+        <p>def2</p>
+    </div>
+    <div id="d2">
+        ghijk
+    </div>
+    <div id="d3"></div>
+</body>
+</html>

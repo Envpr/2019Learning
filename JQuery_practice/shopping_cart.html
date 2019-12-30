@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <link rel="stylesheet" href="shopping_cart.css">
+    <script src="src/jquery.1.11.1.min.js"></script>
+    <script src="shopping_cart.js"></script>
+</head>
+<body onload="load()">
+<div id="main_tab">
+    <div id="title">
+        <div id="tit1"><input type="checkbox" name="btn_chooseall"> 全选</div>
+        <div id="tit2">商品</div>
+        <div id="tit3">单价</div>
+        <div id="tit4">数量</div>
+        <div id="tit5">小计</div>
+        <div id="tit6">操作</div>
+    </div>
+    <div class="shopbox">
+        <div class="shopbox1">
+            <input type="checkbox" class="btn_nor">
+        </div>
+        <div class="shopbox2">
+            <img src="src/1.jpg">Casio/卡西欧 EX-TR350
+        </div>
+        <div class="shopbox3">
+            5999.88
+        </div>
+        <div class="shopbox4">
+            <input type="button" value="-" class="btn_minus">
+            <input type="text" value="3" class="num">
+            <input type="button" value="+" class="btn_plus">
+        </div>
+        <div class="shopbox5">
+            17999.64
+        </div>
+        <div class="shopbox6">
+            <a href="#">
+                删除
+            </a>
+        </div>
+    </div>
+    
+    <div class="shopbox">
+        <div class="shopbox1">
+            <input type="checkbox" class="btn_nor">
+        </div>
+        <div class="shopbox2">
+            <img src="src/2.jpg">Canon/佳能 PowerShot SX50 HS
+        </div>
+        <div class="shopbox3">
+            3888.50
+        </div>
+        <div class="shopbox4">
+            <input type="button" value="-" class="btn_minus">
+            <input type="text" value="1">
+            <input type="button" value="+" class="btn_plus">
+        </div>
+        <div class="shopbox5">
+            3888.50
+        </div>
+        <div class="shopbox6">
+            <a href="#">
+                删除
+            </a>
+        </div>
+    </div>
+    
+    <div class="shopbox">
+        <div class="shopbox1">
+            <input type="checkbox" class="btn_nor">
+        </div>
+        <div class="shopbox2">
+            <img src="src/3.jpg">Sony/索尼 DSC-WX300
+        </div>
+        <div class="shopbox3">
+            1428.50
+        </div>
+        <div class="shopbox4">
+            <input type="button" value="-" class="btn_minus">
+            <input type="text" value="1">
+            <input type="button" value="+" class="btn_plus">
+        </div>
+        <div class="shopbox5">
+            1428.50
+        </div>
+        <div class="shopbox6">
+            <a href="#">
+                删除
+            </a>
+        </div>
+    </div>
+    
+    <div class="shopbox">
+        <div class="shopbox1">
+            <input type="checkbox" class="btn_nor">
+        </div>
+        <div class="shopbox2">
+            <img src="src/4.jpg">Fujifilm/富士 instax mini 25
+        </div>
+        <div class="shopbox3">
+            640.60
+        </div>
+        <div class="shopbox4">
+            <input type="button" value="-" class="btn_minus">
+            <input type="text" value="1">
+            <input type="button" value="+" class="btn_plus">
+        </div>
+        <div class="shopbox5">
+            640.60
+        </div>
+        <div class="shopbox6">
+            <a href="#">
+                删除
+            </a>
+        </div>
+    </div>
+    
+    <div id="foot">
+        <div class="shopbox1"><input type="checkbox" name="btn_chooseall"> 全选</div>
+        <div id="foot02"><a href="#">删除</a></div>
+        <div id="foot03">
+            已选商品
+            <b id="totalnum">0</b>
+            件^ 合计：￥
+            <b id="totalprice">0</b>
+        </div>
+        <div class="shopbox6">
+            <b>
+                <a href="#" id="balance">
+                    结 算
+                </a>
+            </b>
+        </div>
+    </div>
+</div>
+</body>
+</html>

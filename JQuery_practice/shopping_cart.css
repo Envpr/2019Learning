@@ -1,0 +1,139 @@
+
+img{
+    width: auto;
+    height: 100%;
+}
+
+body{
+    margin: 0 auto;
+    width: 993px;
+    padding-top: 50px;
+}
+div{
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+}
+div div{
+    float: left;
+}
+#title{
+    border-top: 3px solid #8bc6fc;
+    border-right: 1px solid #8bc6fc;
+    background-color: #daf0fc;
+    height: 30px;
+    text-align: center;
+}
+#title div{
+    border-left: 1px solid #8bc6fc;
+    height: 30px;
+    padding-top: 3px;
+    font-weight: bold;
+}
+
+#tit1{
+    width: 80px;
+}
+#tit2{
+    width: 380px;
+}
+#tit3{
+    width: 150px;
+}
+#tit4{
+    width: 110px;
+}
+#tit5{
+    width: 170px;
+}
+#tit6{
+    width: 96px;
+}
+#foot{
+    height: 48px;
+}
+
+/*===================*/
+
+.shopbox{
+    width: 993px;
+    height: 100px;
+    background-color: white;
+    border-right: 1px solid #daf0fc;
+    text-align: center;
+}
+.shopbox div{
+    border-left: 1px solid #8bc6fc;
+    border-top: 1px solid #8bc6fc;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.shopbox1{
+    width: 80px;
+}
+.shopbox2{
+    width: 380px;
+    padding-left: 1px;
+}
+.shopbox2 img{
+    margin-left: 1px;
+}
+.shopbox3{
+    width: 150px;
+}
+.shopbox4{
+    width: 90px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.shopbox4 input{
+    height: 25px;
+    width: 50px;
+    text-align: center;
+    border: 1px lightgray solid;
+    padding: 0;
+    margin: 0;
+}
+
+.shopbox5{
+    width: 170px;
+    font-weight: bold;
+}
+.shopbox6{
+    width: 96px;
+}
+.shopbox6 a{
+    text-decoration: none;
+    color: black;
+}
+#foot{
+    background-image: url("src/foot(1.49).png");
+}
+#foot div{
+    border-left: 1px solid #8bc6fc;
+    border-top: 1px solid #8bc6fc;
+    border-bottom: 1px solid #8bc6fc;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#foot #foot02{
+    width: 370px;
+    justify-content: flex-start;
+    padding-left: 10px;
+}
+#foot #foot03{
+    width: 412px;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+#foot03 b{
+    color: red;
+}
+#foot02 a{
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery.1.11.1.min.js"></script>
+
+    <script>
+        window.onload = function () {
+            var btn = document.getElementsByTagName("button")[0]
+            btn.onclick = function () {
+                // 1. 元素选择器
+                // console.log($("p"))
+
+                // 2. id选择器
+                // console.log($("#p1"))
+
+                // 3. 类选择器
+                // console.log($(".pe"))
+
+                // 4. 全选择器
+                // console.log($("*"))
+
+                // 5. 多选择器共用
+                // p标签且类名为pe
+                // console.log($("p.pe"))
+
+                // p标签且id为p2
+                // console.log($("p#p2"))
+
+                //div和p标签
+                // console.log($("div,p"))
+
+                //
+                console.log($("div p"))
+            }
+        }
+    </script>
+
+</head>
+<body>
+<p>aaa</p>
+<div class="pe">
+    <p id="p1" class="pe">虫草花煲鸡汤 鸡、虫草花、红枣、香菇、姜、蒜、葱、盐、醋、料酒 4 做过 爆炒芹菜花 补气补血土鸡汤 土鸡、当归、黄芪、红枣、枸杞、山药、胡萝卜</p>
+    <p id="p2" class="pe">总有一天你会感激你的痛苦。总有一天你会微笑着说，这不是痛苦，而是你足够强大来面对它。 </p>
+</div>
+<button>点击</button>
+</body>
+</html>

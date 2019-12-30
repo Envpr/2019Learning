@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery.1.11.1.min.js"></script>
+    <script>
+        window.onload = function () {
+            var btn = document.getElementsByTagName("button")[0]
+            btn.onclick = function () {
+                //1. js方式获取元素
+                var p = document.getElementById("p1")
+                console.log(p)              // dom对象  调用属性或方法时
+                console.log(p.innerHTML)    // 原生js写法
+                //2. jquery方式获取元素
+                var jq_p = $("#p1")
+                console.log(jq_p)       // jquery对象
+                console.log(jq_p.html()) // jquery写法
+
+                //dom对象和jquery对象可以相互转换
+                // （一） dom对象转jquery对象
+                    console.log($(p))
+
+                // （二） jquery对象转dom对象
+                console.log(jq_p[0])
+                console.log(jq_p.get(0))
+
+                // jquery对象的遍历
+                var ps = $("p")  //所有p标签 返回值是一个jquery对象
+                console.log(ps)
+                // for (var i=0;i<ps.length;i++){
+                //     console.log(ps[i])
+                //     console.log($(ps[i]).html())
+                //     // $(ps[i]).hide(1000)
+                // }
+                ps.hide()  //不用做遍历   -- jquery的强大
+
+            }
+        }
+    </script>
+</head>
+<body>
+<p id="p1" class="pe">虫草花煲鸡汤 鸡、虫草花、红枣、香菇、姜、蒜、葱、盐、醋、料酒 4 做过 爆炒芹菜花 补气补血土鸡汤 土鸡、当归、黄芪、红枣、枸杞、山药、胡萝卜</p>
+<p id="p2" class="pe">总有一天你会感激你的痛苦。总有一天你会微笑着说，这不是痛苦，而是你足够强大来面对它。 </p>
+<button>点击</button>
+</body>
+</html>

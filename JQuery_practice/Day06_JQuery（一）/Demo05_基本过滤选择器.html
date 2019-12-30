@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基本过滤选择器</title>
+    <script src="js/jquery.1.11.1.min.js"></script>
+    <script>
+        window.onload = function () {
+            //取出所有的p标签
+            console.log($("p"))
+            //取出第一个p标签
+            console.log($("p:first"))
+            console.log($($("p")[0]))
+            //取出最后一个p标签
+            console.log($("p:last"))
+            //选择指定下标的p标签
+            console.log($("p:eq(1)"))
+            //取大于1 greater than
+            console.log($("p:gt(1)"))
+            // 取小于3的标签
+            console.log($("p:lt(3)"))
+            //奇数
+            console.log($("p:odd"))
+            //偶数
+            console.log($("p:even"))
+            //not
+            console.log($("p:not(:eq(1))"))
+        }
+    </script>
+</head>
+<body>
+ <div>
+        <p id="p1">北京</p>
+        <p id="p2">上海</p>
+        <p id="p3">广州</p>
+        <p id="p4">深圳</p>
+        <ul>
+            <li>
+                <p>测试</p>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

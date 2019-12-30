@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery.1.11.1.min.js"></script>
+    <script>
+        window.onload = function () {
+            console.log($("[name]"))
+            console.log($("[name='userpwd']"))
+            console.log($("[value]"))
+            console.log($("[type]"))
+            console.log($("[type='text']"))
+            console.log($("input[type='text']"))
+        }
+    </script>
+</head>
+<body>
+<input type="text" name="username" id="t1">
+<input type="password" name="userpwd" id="t2">
+<br>
+<input type="text" id="t3" value="abc">
+</body>
+</html>

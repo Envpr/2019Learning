@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>可见性过滤选择器</title>
+    <script src="js/jquery.1.11.1.min.js"></script>
+    <script>
+        window.onload = function () {
+            console.log($("p:visible"))
+            console.log($("p:hidden"))
+        }
+    </script>
+</head>
+<body>
+    <p id="p1" style="display: none">abc</p>
+    <p id="p2">def</p>
+    <p id="p3">ghi</p>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery.1.11.1.min.js"></script>
+    <script>
+        var flag = true
+
+        function myClick() {
+            //通过JQ的方式来获取p标签
+            // console.log($("#pid"))
+
+            // window.setInterval(function () {
+            //     if (flag){
+            //         $("#pid").hide(1000)
+            //         flag = false
+            //     } else{
+            //         $("#pid").show(1000)
+            //         flag = true
+            //     }
+            // },1000)
+
+            if (flag) {
+                $("#pid").hide(1000)
+                flag = false
+            } else {
+                $("#pid").show(1000)
+                flag = true
+            }
+        }
+    </script>
+</head>
+<body>
+<p id="pid">做一个决定，并不难，难的是付诸行动，并且坚持到底。</p>
+<input type="button" value="点击" onclick="myClick()">
+</body>
+</html>

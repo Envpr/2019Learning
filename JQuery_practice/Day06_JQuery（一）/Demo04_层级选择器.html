@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>层级选择器：1、后代选择器  2、父子选择器 3、后续紧邻兄弟 4、后续所有兄弟</title>
+    <script src="js/jquery.1.11.1.min.js"></script>
+
+    <script>
+        window.onload = function () {
+            // 后代选择器
+            // div下的p标签
+            // console.log($("div p"))
+
+            // 父子选择器
+            // console.log($("div>p"))
+
+            // 后续紧邻兄弟
+            // console.log($("#p2+p"))
+            // 后续所有兄弟
+            // console.log($("#p2~p"))
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <p id="p1">北京</p>
+        <p id="p2">上海</p>
+        <p id="p3">广州</p>
+        <p id="p4">深圳</p>
+        <ul>
+            <li>
+                <p>测试</p>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
